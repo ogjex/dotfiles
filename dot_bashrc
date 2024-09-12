@@ -1,0 +1,38 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+# set default editor 
+export EDITOR='nvim'
+export VISUAL='nvim'
+
+# set aliases
+alias ls='ls --color=auto'
+alias ll='ls -lh --color=auto'
+alias l.='ls -lah --color=auto'
+# set copy to verbose and with overwrite question
+alias cp='cp -vi'
+# set remove to a false command 
+alias rm='echo "This is not the command you are looking for."; false'
+alias del='trash-put'
+# set move to verbose and with overwrite question
+alias mv='mv -vi'
+# set grep to have nice colors
+alias grep='grep --color=auto'
+# volume controls using wireplumber
+alias vol='wpctl set-volume @DEFAULT_AUDIO_SINK@'
+alias volget='wpctl get-volume @DEFAULT_AUDIO_SINK@'
+
+PS1='[\u@\h \W]\$ '
+# Set up oh-my-posh
+eval "$(oh-my-posh init bash --config /home/jex/.config/oh-my-posh/themes/jblab_2021.omp.json)"
+
+# Set up fzf key bindings and fuzzy completion
+eval "$(fzf --bash)"
+
+# Set up zoxide key bindings and fuzzy completion
+eval "$(zoxide init --cmd j bash)"
+
