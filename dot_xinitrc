@@ -32,24 +32,20 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-#xrandr --output HDMI-0 --rotate right --left-of DP-0 
-#xrandr --output DP-0 --rotate left --left-of DP-2 
-#xrandr --output DP-2 --primary --right-of DP-0 
-#/usr/bin/pipewire &
-#/usr/bin/pipewire-pulse &
-#/usb/bin/pipewire-media-session &
-
 # set DK layout
 setxkbmap -layout dk 
 
 # start compositor
 picom &
 
+# start notification centre 
+dunst &
+
 # start wallpaper and restore to previous wallpaper 
 nitrogen --restore &
 
 # start dwmblocks statusbar icons
-dwmblocks &
+slstatus &
 
 # start window manager
 exec dwm 
