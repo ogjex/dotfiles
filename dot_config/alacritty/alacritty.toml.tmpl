@@ -1,0 +1,25 @@
+[window]
+
+opacity = 0.9
+
+padding.x = 10
+padding.y = 10
+
+decorations = "Full"
+
+decorations_theme_variant = "Dark"
+
+[font]
+normal.family = "JetBrainsMono NFP"
+bold.family = "JetBrainsMono NFP"
+italic.family = "JetBrainsMono NFP"
+bold_italic.family = "JetBrainsMono NFP"
+
+# machine-specific configuration
+{{- if eq .chezmoi.hostname "arch-frame" }}
+# this will only be included in ~/.config/alacritty/alacritty.toml on arch-frame
+size = 8 
+{{- else if eq .chezmoi.hostname "arch-desktop" }}
+# this will only be included in ~/.config/alacritty/alacritty.toml on arch-desktop
+size = 14 
+{{- end }}
