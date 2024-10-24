@@ -18,8 +18,11 @@ bold_italic.family = "JetBrainsMono NFP"
 # machine-specific configuration
 {{- if eq .chezmoi.hostname "arch-frame" }}
 # this will only be included in ~/.config/alacritty/alacritty.toml on arch-frame
-size = 8 
+size = 11 
 {{- else if eq .chezmoi.hostname "arch-desktop" }}
 # this will only be included in ~/.config/alacritty/alacritty.toml on arch-desktop
 size = 14 
 {{- end }}
+
+[env]
+WINIT_X11_SCALE_FACTOR = "1.66"
