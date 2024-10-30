@@ -26,7 +26,7 @@ alias grep='grep --color=auto'
 alias vol='wpctl set-volume @DEFAULT_AUDIO_SINK@'
 alias volget='wpctl get-volume @DEFAULT_AUDIO_SINK@'
 # flameshot screenshot grabber
-alias ss='flameshot gui --path ~/Pictures/screenshots/'
+alias fl='flameshot gui --path ~/Pictures/screenshots/'
 
 PS1='[\u@\h \W]\$ '
 # Set up oh-my-posh
