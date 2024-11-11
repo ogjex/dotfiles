@@ -4,12 +4,16 @@
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
+PATH=$PATH:$HOME/.local/bin:$HOME/.scripts
 
 # set default editor 
 export EDITOR='nvim'
 export VISUAL='nvim'
 
-# set aliases
+################# set aliases
+# set neovim as replacement for vim
+alias vim='nvim'
+# set file listing
 alias ls='ls --color=auto'
 alias ll='ls -lh --color=auto'
 alias l.='ls -lah --color=auto'
@@ -38,3 +42,5 @@ eval "$(fzf --bash)"
 # Set up zoxide key bindings and fuzzy completion
 eval "$(zoxide init --cmd j bash)"
 
+# Run fastfetch but only if there are no terminals running before
+#init_fastfetch
