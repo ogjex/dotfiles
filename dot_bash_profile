@@ -2,4 +2,7 @@
 # ~/.bash_profile
 #
 
+#PATH=$HOME/.local/bin:$HOME/.scripts:$PATH
+
 [[ -f ~/.bashrc ]] && . ~/.bashrc
+#source ~/.bashrc
