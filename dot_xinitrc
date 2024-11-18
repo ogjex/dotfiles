@@ -4,6 +4,8 @@ userresources=$HOME/.Xresources
 usermodmap=$HOME/.Xmodmap
 sysresources=/etc/X11/xinit/.Xresources
 sysmodmap=/etc/X11/xinit/.Xmodmap
+# import paths so the xsession and other programs are aware of it
+PATH=$HOME/.local/bin:$HOME/.scripts:$PATH
 
 # merge in defaults and keymaps
 
