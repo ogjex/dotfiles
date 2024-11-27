@@ -37,7 +37,7 @@ fi
 # xrandr --output eDP --primary --mode 2256x1504 --dpi 150
 
 # set DK layout
-setxkbmap -layout dk
+#setxkbmap -layout dk
 
 # start compositor
 picom &
