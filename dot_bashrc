@@ -40,6 +40,5 @@ eval "$(fzf --bash)"
 
 # Set up zoxide key bindings and fuzzy completion
 eval "$(zoxide init --cmd j bash)"
-
-# Run fastfetch but only if there are no terminals running before
-#init_fastfetch
+# set vi mode in bash
+set -o vi
