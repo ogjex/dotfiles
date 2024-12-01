@@ -11,14 +11,11 @@ checkout = git clone 'git@github.com:ogjex/dwm-arch-frame.git' 'dwm-arch-frame'
 [builds/dwm-arch-desktop]
 checkout = git clone 'git@github.com:ogjex/dwm-arch-desktop.git' 'dwm-arch-desktop'
 
-[builds/dmenu]
-checkout = git clone 'https://git.suckless.org/dmenu' 'dmenu'
-
 [builds/dwmblocks]
 checkout = git clone 'git@github.com:ogjex/dwmblocks.git' 'dwmblocks'
 
 [builds/slstatus]
 checkout = git clone 'git@github.com:ogjex/slstatus-arch-frame.git' 'slstatus'
 
-[builds/dmenu-arch-frame]
-checkout = git clone 'https://git.suckless.org/dmenu' 'dmenu-arch-frame'
+[builds/dmenu]
+checkout = git clone 'git@github.com:ogjex/dmenu.git' 'dmenu'
