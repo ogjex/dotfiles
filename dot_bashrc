@@ -34,6 +34,7 @@ alias volget='wpctl get-volume @DEFAULT_AUDIO_SINK@'
 alias fl='flameshot gui --path ~/Pictures/screenshots/'
 
 PS1='[\u@\h \W]\$ '
+
 # Set up oh-my-posh
 eval "$(oh-my-posh init bash --config /home/jex/.config/oh-my-posh/themes/jblab_2021.omp.json)"
 
@@ -44,3 +45,6 @@ eval "$(fzf --bash)"
 eval "$(zoxide init --cmd j bash)"
 # set vi mode in bash
 set -o vi
+
+# source scripts 
+source /home/jex/.scripts/fzf-command-bookmarks.sh
