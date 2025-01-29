@@ -48,9 +48,3 @@ set -o vi
 
 # setup fzf-command-bookmarks
 source /home/jex/.scripts/fzf-command-bookmarks.sh
-# Shortcut to trigger the bookmark addition functionality
-export FZF_COMMAND_BOOKMARKS_ADD="C-b"
-# Shortcut to trigger the bookmark showing functionality
-export FZF_COMMAND_BOOKMARKS_SHOW="C-@"
-# Manages where the bookmarks are kept
-export FZF_COMMAND_BOOKMARKS_FILE=~/.fzf-command-bookmarks.txt
