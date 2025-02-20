@@ -5,11 +5,11 @@ checkout = git clone 'git@github.com:ogjex/dotfiles.git' 'chezmoi'
 [.scripts]
 checkout = git clone 'git@github.com:ogjex/scripts.git' '.scripts'
 
-[builds/dwm-arch-frame]
+[builds/dwm]
 checkout = git clone 'git@github.com:ogjex/dwm-arch-frame.git' 'dwm-arch-frame'
 
-[builds/dwm-arch-desktop]
-checkout = git clone 'git@github.com:ogjex/dwm-arch-desktop.git' 'dwm-arch-desktop'
+[builds/config-h]
+checkout = git clone 'git@github.com:ogjex/config-h.git' 'config-h'
 
 [builds/dwmblocks]
 checkout = git clone 'git@github.com:ogjex/dwmblocks.git' 'dwmblocks'

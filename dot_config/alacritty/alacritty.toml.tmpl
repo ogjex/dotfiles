@@ -19,8 +19,8 @@ bold_italic.family = "JetBrainsMono NFP"
 {{- if eq .chezmoi.hostname "arch-frame" }}
 # this will only be included in ~/.config/alacritty/alacritty.toml on arch-frame
 size = 11 
-{{- else if eq .chezmoi.hostname "arch-desktop" }}
-# this will only be included in ~/.config/alacritty/alacritty.toml on arch-desktop
+{{- else }}
+# this will be included in ~/.config/alacritty/alacritty.toml on all other machines
 size = 12 
 {{- end }}
 
