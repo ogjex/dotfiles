@@ -25,9 +25,16 @@ size = 12
 {{- end }}
 
 [env]
+{{- if eq .chezmoi.hostname "arch-frame" }}
+# this will only be included in ~/.config/alacritty/alacritty.toml on arch-frame
 WINIT_X11_SCALE_FACTOR = "1.66"
 
-#[keyboard]
-#bindings = [
-#  { key = "V",        mods = "Super", action = "Paste" }
-#  ]
+{{- else }}
+# this will be included in ~/.config/alacritty/alacritty.toml on all other machines
+WINIT_X11_SCALE_FACTOR = "1"
+{{- end }}
+
+[keyboard]
+bindings = [
+{ key = "v",        mods = "Super", action = "Paste" }
+]
