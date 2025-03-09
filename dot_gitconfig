@@ -1,0 +1,10 @@
+[user]
+	email = m.agnu.ha@gmail.com
+	name = ogjex
+[alias]
+	st = status
+	co = checkout
+	br = branch
+	rb = rebase
+	cm = commit -m
+
