@@ -121,6 +121,9 @@ end)
 -- Enable break indent
 vim.opt.breakindent = true
 
+-- Wrap long lines at blanks
+vim.opt.linebreak = true
+
 -- Save undo history
 vim.opt.undofile = true
 
