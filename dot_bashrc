@@ -48,14 +48,3 @@ set -o vi
 
 # setup fzf-command-bookmarks
 source /home/jex/.scripts/fzf-command-bookmarks.sh
-
-# set function to exit vifm at active pane directory location
-vicd()
-{
-    local dst="$(command vifm --choose-dir - "$@")"
-    if [ -z "$dst" ]; then
-        echo 'Directory picking cancelled/failed'
-        return 1
-    fi
-    cd "$dst"
-}
