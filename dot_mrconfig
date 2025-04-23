@@ -22,3 +22,12 @@ checkout = git clone 'git@github.com:ogjex/dmenu.git' 'dmenu'
 
 [dev/course-setup]
 checkout = git clone 'git@github.com:ogjex/course-setup.git' 'course-setup'
+
+[dev/groopy]
+checkout = git clone 'git@github.com:ogjex/groopy.git' 'groopy'
+
+[builds/qmk-firmware]
+checkout = git clone 'git@github.com:ogjex/qmk_firmware.git' 'qmk-firmware'
+
+[builds/qmk-keyboards]
+checkout = git clone 'git@github.com:ogjex/qmk-keyboards.git' 'qmk-keyboards'
