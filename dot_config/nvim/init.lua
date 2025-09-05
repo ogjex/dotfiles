@@ -88,9 +88,14 @@ P.S. You can delete this when you're done too. It's your config now! :)
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
-
+vim.g.vimtex_view_method = "sioyek"
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = true
+
+vim.o.foldmethod = "expr"
+vim.o.foldexpr = "vimtex#fold#level(v:lnum)"
+vim.o.foldtext = "vimtex#fold#text()"
+vim.o.foldlevel = 2
 
 -- [[ Setting options ]]
 -- See `:help vim.opt`
@@ -249,6 +254,7 @@ require("lazy").setup({
 	--
 	-- See `:help gitsigns` to understand what the configuration keys do
 	{ -- Adds git related signs to the gutter, as well as utilities for managing changes
+		"lervag/vimtex",
 		"lewis6991/gitsigns.nvim",
 		opts = {
 			signs = {
@@ -632,6 +638,7 @@ require("lazy").setup({
 				-- rust_analyzer = {},
 				shellcheck = {},
 				--shellharden = {},
+				texlab = {},
 				-- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
 				--
 				-- Some languages (like typescript) have entire language plugins that can be useful:
@@ -848,23 +855,23 @@ require("lazy").setup({
 			})
 		end,
 	},
-  { -- LEAP
-    "ggandor/leap.nvim",
-    enabled = true,
-    keys = {
-      { "s", mode = { "n", "x", "o" }, desc = "Leap Forward to" },
-      { "S", mode = { "n", "x", "o" }, desc = "Leap Backward to" },
-      { "gs", mode = { "n", "x", "o" }, desc = "Leap from Windows" },
-    },
-    config = function(_, opts)
-      local leap = require("leap")
-      for k, v in pairs(opts) do
-        leap.opts[k] = v
-      end
-      leap.add_default_mappings(true)
-      vim.keymap.del({ "x", "o" }, "X")
-    end,
-  },
+	{ -- LEAP
+		"ggandor/leap.nvim",
+		enabled = true,
+		keys = {
+			{ "s", mode = { "n", "x", "o" }, desc = "Leap Forward to" },
+			{ "S", mode = { "n", "x", "o" }, desc = "Leap Backward to" },
+			{ "gs", mode = { "n", "x", "o" }, desc = "Leap from Windows" },
+		},
+		config = function(_, opts)
+			local leap = require("leap")
+			for k, v in pairs(opts) do
+				leap.opts[k] = v
+			end
+			leap.add_default_mappings(true)
+			vim.keymap.del({ "x", "o" }, "X")
+		end,
+	},
 	{ -- COLORSCHEME
 		-- You can easily change to a different colorscheme.
 		-- Change the name of the colorscheme plugin below, and then
@@ -956,6 +963,7 @@ require("lazy").setup({
 				-- Some languages depend on vim's regex highlighting system (such as Ruby) for indent rules.
 				--  If you are experiencing weird indenting issues, add the language to
 				--  the list of additional_vim_regex_highlighting and disabled languages for indent.
+				disable = { "latex" },
 				additional_vim_regex_highlighting = { "ruby" },
 			},
 			indent = { enable = true, disable = { "ruby" } },
