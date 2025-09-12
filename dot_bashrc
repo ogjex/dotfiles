@@ -49,5 +49,9 @@ eval "$(zoxide init --cmd j bash)"
 # set vi mode in bash
 set -o vi
 
+# SHOPTS AUTOSTARTS
+shopt -s cdspell
+shopt -s autocd
+
 # setup fzf-command-bookmarks
 source /home/jex/.scripts/fzf-command-bookmarks.sh
