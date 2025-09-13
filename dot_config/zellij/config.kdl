@@ -88,16 +88,16 @@ keybinds clear-defaults=true {
         bind "tab" { MovePane; }
     }
     scroll {
-        bind "" { MoveFocusOrTab "left"; SwitchToMode "normal"; }
-        bind "" { MoveFocus "down"; SwitchToMode "normal"; }
-        bind "" { MoveFocus "up"; SwitchToMode "normal"; }
-        bind "" { MoveFocusOrTab "right"; SwitchToMode "normal"; }
-        bind "" { EditScrollback; SwitchToMode "normal"; }
-        bind "" { MoveFocusOrTab "left"; SwitchToMode "normal"; }
-        bind "" { MoveFocus "down"; SwitchToMode "normal"; }
-        bind "" { MoveFocus "up"; SwitchToMode "normal"; }
-        bind "" { MoveFocusOrTab "right"; SwitchToMode "normal"; }
-        bind "" { SwitchToMode "entersearch"; SearchInput 0; }
+        // bind "" { MoveFocusOrTab "left"; SwitchToMode "normal"; }
+        //bind "" { MoveFocus "down"; SwitchToMode "normal"; }
+        //bind "" { MoveFocus "up"; SwitchToMode "normal"; }
+        //bind "" { MoveFocusOrTab "right"; SwitchToMode "normal"; }
+        //bind "" { EditScrollback; SwitchToMode "normal"; }
+        //bind "" { MoveFocusOrTab "left"; SwitchToMode "normal"; }
+        //bind "" { MoveFocus "down"; SwitchToMode "normal"; }
+        //bind "" { MoveFocus "up"; SwitchToMode "normal"; }
+        //bind "" { MoveFocusOrTab "right"; SwitchToMode "normal"; }
+        //bind "" { SwitchToMode "entersearch"; SearchInput 0; }
     }
     search {
         bind "c" { SearchToggleOption "CaseSensitivity"; }
@@ -167,7 +167,7 @@ keybinds clear-defaults=true {
         bind "Alt l" { MoveFocusOrTab "right"; }
     }
     shared_except "locked" "scroll" "search" "tmux" {
-        bind "" { SwitchToMode "tmux"; }
+        //bind "" { SwitchToMode "tmux"; }
     }
     shared_except "locked" "scroll" "search" {
         bind "Ctrl s" { SwitchToMode "scroll"; }
@@ -197,7 +197,7 @@ keybinds clear-defaults=true {
         bind "down" { ScrollDown; }
         bind "up" { ScrollUp; }
         bind "right" { PageScrollDown; }
-        bind "" { PageScrollUp; }
+        //bind "" { PageScrollUp; }
         bind "Ctrl c" { ScrollToBottom; SwitchToMode "normal"; }
         bind "d" { HalfPageScrollDown; }
         bind "Ctrl f" { PageScrollDown; }
@@ -235,7 +235,7 @@ keybinds clear-defaults=true {
         bind "%" { NewPane "right"; SwitchToMode "normal"; }
         bind "," { SwitchToMode "renametab"; }
         bind "[" { SwitchToMode "scroll"; }
-        bind "" { Write 2; SwitchToMode "normal"; }
+        //bind "" { Write 2; SwitchToMode "normal"; }
         bind "c" { NewTab; SwitchToMode "normal"; }
         bind "h" { MoveFocus "left"; SwitchToMode "normal"; }
         bind "j" { MoveFocus "down"; SwitchToMode "normal"; }
