@@ -855,7 +855,24 @@ require("lazy").setup({
 			})
 		end,
 	},
-	{ -- LEAP
+	{ -- relative lazy linenumbers
+		"tzvetkoff/vim-numbertoggle",
+	},
+
+	{ -- diagramming (not functional yet)
+		"jbyuki/venn.nvim",
+		enabled = true,
+	},
+	{ -- render markdown when navigating
+		"MeanderingProgrammer/render-markdown.nvim",
+		dependencies = { "nvim-treesitter/nvim-treesitter", "nvim-mini/mini.nvim" }, -- if you use the mini.nvim suite
+		-- dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-mini/mini.icons' }, -- if you use standalone mini plugins
+		-- dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' }, -- if you prefer nvim-web-devicons
+		---@module 'render-markdown'
+		---@type render.md.UserConfig
+		opts = {},
+	},
+	{ -- leap: jump to next word in paragraph
 		"ggandor/leap.nvim",
 		enabled = true,
 		keys = {
