@@ -27,7 +27,7 @@ bolt
 {{- end }}
 brave-bin
 {{- if eq .chezmoi.hostname "arch-frame" "x230-alpha" }}
-# this will only be included on all laptops
+# this will be included on all laptops
 brightnessctl
 {{- end }}
 btop
@@ -73,6 +73,7 @@ networkmanager
 nitrogen
 ntfs-3g
 {{- if eq .chezmoi.hostname "arch-desk" }}
+# this will only be included on arch-desk
 nvidia
 nvidia-utils
 nvidia-settings
@@ -95,10 +96,12 @@ pipewire-jack
 pipewire-pulse
 plasma-workspace-wallpapers
 {{- if eq .chezmoi.hostname "arch-frame" }}
+# this will only be included on arch-frame
 power-profiles-daemon
 {{- end }}
 python-pip
 {{- if eq .chezmoi.hostname "arch-frame" "x230-alpha" }}
+# this will only be included on laptops
 powertop
 {{- end }}
 qemu-base
@@ -146,6 +149,7 @@ texlive-publishers
 texlive-xetex
 tk
 {{- if eq .chezmoi.hostname "arch-frame" "x230-alpha" }}
+# this will only be included on x230-alpha
 tlp
 {{- end }}
 trash-cli
@@ -166,6 +170,7 @@ xdg-user-dirs
 xdg-utils
 xdotool
 {{- if eq .chezmoi.hostname "arch-frame" }}
+# this will only be included on arch-frame
 xf86-video-amdgpu
 xf86-video-vesa
 {{- end }}
