@@ -19,9 +19,9 @@ bash-completion
 bat
 betterlockscreen
 biber
+bluez
 {{- if eq .chezmoi.hostname "arch-frame" }}
 # this will only be included on arch-frame
-bluez
 bluez-utils
 bolt
 {{- end }}
@@ -71,6 +71,10 @@ neovim
 network-manager-applet
 networkmanager
 nitrogen
+{{- if eq .chezmoi.hostname "arch-frame" "x230-alpha" }}
+# this will only be included on laptops using wireless
+nmtui
+{{- end }}
 ntfs-3g
 {{- if eq .chezmoi.hostname "arch-desk" }}
 # this will only be included on arch-desk
@@ -163,6 +167,7 @@ vim
 vimv
 vivaldi
 vlc
+wireplumber
 wget
 wpa_supplicant
 xclip
@@ -220,6 +225,7 @@ xorg-xwd
 xorg-xwininfo
 xorg-xwud
 yay-bin
+yay-bin-debug
 zellij
 zotero
 zoxide
