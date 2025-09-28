@@ -1,11 +1,15 @@
-# Packages list generated on Sun Sep 28 09:47:38 AM CEST 2025
+# Packages list generated on Sun Sep 28 10:02:25 AM CEST 2025
 1password
 acpi
 acpi_call
 acpid
 alacritty
 alsa-utils
+# machine-specific configuration
+{{- if eq .chezmoi.hostname "arch-frame" "arch-desk" }}
+# this will only be included on arch-frame and arch-desk
 amd-ucode
+{{- end }}
 archlinux-wallpaper
 aurutils
 autorandr
@@ -15,11 +19,17 @@ bash-completion
 bat
 betterlockscreen
 biber
+{{- if eq .chezmoi.hostname "arch-frame" }}
+# this will only be included on arch-frame
 bluez
 bluez-utils
 bolt
+{{- end }}
 brave-bin
+{{- if eq .chezmoi.hostname "arch-frame" "x230-alpha" }}
+# this will only be included on all laptops
 brightnessctl
+{{- end }}
 btop
 btrfs-progs
 chezmoi
@@ -38,6 +48,7 @@ flameshot
 fwupd
 fzf
 ghostscript
+gdisk
 gimp
 git
 gnome-backgrounds
@@ -61,6 +72,11 @@ network-manager-applet
 networkmanager
 nitrogen
 ntfs-3g
+{{- if eq .chezmoi.hostname "arch-desk" }}
+nvidia
+nvidia-utils
+nvidia-settings
+{{- end }}
 obsidian
 ollama
 ollama-rocm
@@ -78,8 +94,13 @@ pipewire-alsa
 pipewire-jack
 pipewire-pulse
 plasma-workspace-wallpapers
+{{- if eq .chezmoi.hostname "arch-frame" }}
 power-profiles-daemon
+{{- end }}
 python-pip
+{{- if eq .chezmoi.hostname "arch-frame" "x230-alpha" }}
+powertop
+{{- end }}
 qemu-base
 qemu-full
 qmk
@@ -93,6 +114,7 @@ scribus
 scrot
 sioyek
 smartmontools
+snapper
 sof-firmware
 starship
 swtpm
@@ -122,9 +144,10 @@ texlive-plaingeneric
 texlive-pstricks
 texlive-publishers
 texlive-xetex
-timeshift
-timeshift-autosnap
 tk
+{{- if eq .chezmoi.hostname "arch-frame" "x230-alpha" }}
+tlp
+{{- end }}
 trash-cli
 tree-sitter-cli
 ttf-ms-fonts
@@ -142,8 +165,10 @@ xclip
 xdg-user-dirs
 xdg-utils
 xdotool
+{{- if eq .chezmoi.hostname "arch-frame" }}
 xf86-video-amdgpu
 xf86-video-vesa
+{{- end }}
 xorg-bdftopcf
 xorg-docs
 xorg-font-util
@@ -193,4 +218,3 @@ yay-bin
 zellij
 zotero
 zoxide
-zramd
