@@ -11,8 +11,8 @@ checkout = git clone 'git@github.com:ogjex/dwm.git' 'dwm'
 [builds/config-h]
 checkout = git clone 'git@github.com:ogjex/config-h.git' 'config-h'
 
-[builds/dwmblocks]
-checkout = git clone 'git@github.com:ogjex/dwmblocks.git' 'dwmblocks'
+[builds/dwmblocks-async]
+checkout = git clone 'git@github.com:ogjex/dwmblocks-async.git' 'dwmblocks-async'
 
 [builds/slstatus]
 checkout = git clone 'git@github.com:ogjex/slstatus-arch-frame.git' 'slstatus'
