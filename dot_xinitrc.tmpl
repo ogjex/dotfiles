@@ -48,15 +48,8 @@ dunst &
 # start wallpaper and restore to previous wallpaper 
 nitrogen --restore &
 
-# start dwmblocks or slstatus statusbar icons
-# machine-specific configuration
-{{- if eq .chezmoi.hostname "arch-x230-alpha" }}
-# this will only be included in ~/.xinitrc on arch-x230-alpha
+# start dwmblocks
 dwmblocks &
-{{- else }}
-# this will be included in ~/.xinitrc on all other machines
-slstatus &
-{{- end }}
 
 # start window manager
 exec dwm 
