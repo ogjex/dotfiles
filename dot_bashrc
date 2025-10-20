@@ -35,9 +35,23 @@ alias fl='flameshot gui --path ~/Pictures/screenshots/'
 
 PS1='[\u@\h \W]\$ '
 
-# Set up oh-my-posh
-#eval "$(oh-my-posh init bash --config /home/jex/.config/oh-my-posh/themes/jblab_2021.omp.json)"
-#
+# set ctrl-y to copy current line in terminal
+if [[ -n $DISPLAY ]]; then
+  copy_line_to_x_clipboard () {
+    printf %s "$READLINE_LINE" | xclip -selection CLIPBOARD
+  }
+  bind -x '"\C-y": copy_line_to_x_clipboard' # binded to ctrl-y
+fi
+
+# combine history between terminals
+# Avoid duplicates
+HISTCONTROL=ignoredups:erasedups
+# When the shell exits, append to the history file instead of overwriting it
+shopt -s histappend
+
+# After each command, append to the history file and reread it
+PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
+
 # Set up starship
 eval "$(starship init bash)"
 
