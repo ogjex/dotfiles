@@ -1,0 +1,15 @@
+Host sauron
+	HostName 192.168.1.101
+	User jex
+
+Host pve
+	HostName 192.168.1.220
+	User jex
+
+Host nas
+	HostName 192.168.1.120
+	User jex
+
+Host sync
+	HostName 192.168.1.203
+	User jex
