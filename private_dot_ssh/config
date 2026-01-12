@@ -1,5 +1,9 @@
+Host melkor
+	HostName 192.168.1.50
+	User jex
+
 Host sauron
-	HostName 192.168.1.101
+	HostName 192.168.1.51
 	User jex
 
 Host pve
