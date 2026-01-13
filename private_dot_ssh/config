@@ -17,3 +17,8 @@ Host nas
 Host sync
 	HostName 192.168.1.203
 	User jex
+
+Host roxy
+	HostName 10.20.0.122
+	User jex
+
