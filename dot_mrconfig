@@ -38,4 +38,7 @@ checkout = git clone 'git@github.com:ogjex/qmk-keyboards.git' 'qmk-keyboards'
 [dev/terraform]
 checkout = git clone 'git@github.com:ogjex/terraform.git' 'terraform'
 
+[dev/server-rc]
+checkout = git clone 'git@github.com:ogjex/server-rc.git' 'server-rc'
+
 
