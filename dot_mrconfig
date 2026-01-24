@@ -32,7 +32,7 @@ checkout = git clone 'git@github.com:ogjex/mrph-dk.git' 'mrph-dk'
 [builds/qmk-firmware]
 checkout = git clone 'git@github.com:ogjex/qmk_firmware.git' 'qmk-firmware'
 
-[builds/qmk-keyboards]
+[dev/qmk-keyboards]
 checkout = git clone 'git@github.com:ogjex/qmk-keyboards.git' 'qmk-keyboards'
 
 [dev/terraform]
