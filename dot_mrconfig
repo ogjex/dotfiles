@@ -29,16 +29,13 @@ checkout = git clone 'git@github.com:ogjex/groopy.git' 'groopy'
 [sites/mrph-dk]
 checkout = git clone 'git@github.com:ogjex/mrph-dk.git' 'mrph-dk'
 
-[builds/qmk-firmware]
+[dev/qmk-firmware]
 checkout = git clone 'git@github.com:ogjex/qmk_firmware.git' 'qmk-firmware'
 
-[builds/qmk-keyboards]
+[dev/qmk-keyboards]
 checkout = git clone 'git@github.com:ogjex/qmk-keyboards.git' 'qmk-keyboards'
 
 [dev/terraform]
 checkout = git clone 'git@github.com:ogjex/terraform.git' 'terraform'
-
-[dev/server-rc]
-checkout = git clone 'git@github.com:ogjex/server-rc.git' 'server-rc'
 
 
