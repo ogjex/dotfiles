@@ -1,0 +1,11 @@
+0000000000000000000000000000000000000000 4578e235a611305b12bed9fcd19eb8c9accc9172 Magnus Rotvit Perlt Hansen <magnuha@gmail.com> 1773343551 +0100	clone: from https://github.com/DreamMaoMao/mango-config.git
+4578e235a611305b12bed9fcd19eb8c9accc9172 b0bdc06b4be007bcc3a02139617f90ca6bc2082b Magnus Rotvit Perlt Hansen <magnuha@gmail.com> 1773382301 +0100	commit: get new config from argosnothing
+b0bdc06b4be007bcc3a02139617f90ca6bc2082b e3945f0b9b1497d6a4e098320f25313293726004 Magnus Rotvit Perlt Hansen <magnuha@gmail.com> 1773426909 +0100	commit: add waybar
+e3945f0b9b1497d6a4e098320f25313293726004 e3945f0b9b1497d6a4e098320f25313293726004 Magnus Rotvit Perlt Hansen <magnuha@gmail.com> 1773470562 +0100	reset: moving to e3945f0
+e3945f0b9b1497d6a4e098320f25313293726004 e3945f0b9b1497d6a4e098320f25313293726004 Magnus Rotvit Perlt Hansen <magnuha@gmail.com> 1773470631 +0100	reset: moving to e3945f0
+e3945f0b9b1497d6a4e098320f25313293726004 3b67821c9dbb5ef3cadb9020436baed0dfe43fbe Magnus Rotvit Perlt Hansen <magnuha@gmail.com> 1773473785 +0100	commit: clean up after last mess up, created multiple conf files
+3b67821c9dbb5ef3cadb9020436baed0dfe43fbe 4e6d8e4c1171ae26a58d9b14045681a348163e09 Magnus Rotvit Perlt Hansen <magnuha@gmail.com> 1773474492 +0100	commit: fix waybar
+4e6d8e4c1171ae26a58d9b14045681a348163e09 9cffbfdf5cc0e1be050ab2e567591dd7210816d5 Magnus Rotvit Perlt Hansen <magnuha@gmail.com> 1773651536 +0100	commit: clean up layouts.conf
+9cffbfdf5cc0e1be050ab2e567591dd7210816d5 c843e04f68c7338cd3b3958e9ccf22d5e219b603 Magnus Rotvit Perlt Hansen <magnuha@gmail.com> 1773777063 +0100	commit: edit bindings for tags
+c843e04f68c7338cd3b3958e9ccf22d5e219b603 22f30838adb3dba698da08bbca8dc121c150e405 Magnus Rotvit Perlt Hansen <magnuha@gmail.com> 1773777870 +0100	commit: update battery and colors
+22f30838adb3dba698da08bbca8dc121c150e405 fdb2fd5df5e7dbeecb0a4bcd5e624c5822e10dff ogjex <m.agnu.ha@gmail.com> 1774550102 +0100	commit: update separator to once (otherwise too high of a drain)
