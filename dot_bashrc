@@ -68,4 +68,4 @@ shopt -s cdspell
 shopt -s autocd
 
 # launch fzf-command-bookmarks
-source /home/jex/scripts/fzf-command-bookmarks.sh
+source $HOME/scripts/fzf-command-bookmarks.sh
