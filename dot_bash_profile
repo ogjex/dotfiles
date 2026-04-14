@@ -4,5 +4,5 @@
 
 #PATH=$HOME/.local/bin:$HOME/scripts:$PATH
 
-[[ -f ~/.bashrc ]] && . ~/.bashrc
+[[ -f ~/.bashrc ]] && . "$HOME/.bashrc"
 #source ~/.bashrc
