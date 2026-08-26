@@ -32,7 +32,8 @@ alias vol='wpctl set-volume @DEFAULT_AUDIO_SINK@'
 alias volget='wpctl get-volume @DEFAULT_AUDIO_SINK@'
 # flameshot screenshot grabber
 alias fl='flameshot gui --path ~/Pictures/screenshots/'
-
+alias k=kubectl
+complete -F __start_kubectl k
 PS1='[\u@\h \W]\$ '
 
 # set ctrl-y to copy current line in terminal
@@ -69,3 +70,4 @@ shopt -s autocd
 
 # launch fzf-command-bookmarks
 source $HOME/scripts/fzf-command-bookmarks.sh
+source <(kubectl completion bash)
