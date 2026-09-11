@@ -68,6 +68,12 @@ set -o vi
 shopt -s cdspell
 shopt -s autocd
 
+# reuse existing agent
+if [ -z "$SSH_AUTH_SOCK" ]; then
+    eval "$(ssh-agent -s)" > /dev/null
+    ssh-add
+fi
+
 # launch fzf-command-bookmarks
 source $HOME/scripts/fzf-command-bookmarks.sh
 source <(kubectl completion bash)
