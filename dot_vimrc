@@ -13,5 +13,5 @@ colorscheme zaibatsu
 set wildmenu
 
 set colorcolumn=100
-syntax=on
+syntax on
 inoremap jk <Esc>
