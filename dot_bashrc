@@ -6,12 +6,12 @@
 [[ $- != *i* ]] && return
 
 # set default editor 
-export EDITOR='nvim'
-export VISUAL='nvim'
+export EDITOR='vim'
+export VISUAL='vim'
 
 ################# set aliases
 # set neovim as replacement for vim
-alias vim='nvim'
+# alias vim='nvim'
 # set file listing
 alias ls='ls --color=auto'
 alias ll='ls -lh --color=auto'

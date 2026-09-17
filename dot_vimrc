@@ -1,0 +1,17 @@
+set nocompatible
+filetype off
+set number
+
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set hlsearch
+
+set t_Co=256
+colorscheme zaibatsu
+
+set wildmenu
+
+set colorcolumn=100
+syntax=on
+inoremap jk <Esc>
