@@ -1,4 +1,4 @@
-set nocompatible
+"set nocompatible
 syntax enable
 filetype plugin on 
 
@@ -6,20 +6,15 @@ filetype plugin on
 set path+=**
 set wildmenu
 
-
 set relativenumber
 
 set tabstop=2
 set shiftwidth=2
 set expandtab
 set hlsearch
-
+set clipboard=unnamedplus
 set t_Co=256
 colorscheme zaibatsu
 
 set colorcolumn=80
 inoremap jk <Esc>
-
-
-let &t_SI = "\e[6 q"  " Set cursor to a line/bar in insert mode
-let &t_EI = "\e[2 q"  " Set cursor to a block in normal mode
